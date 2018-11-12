@@ -1,15 +1,33 @@
 ---
 title: Le Wagon - Middleman
 ---
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="banner">
+      <h1>WELCOME HOME</h1>
+      <h2>Book unique homes and experience a city like a local.</h2>
+      <a href="#" class="btn-green">How it works</a>
   </div>
+
+<div class="container">
+      <h2 class="text-center">Recent Flats</h2>
+      <div class="cards">
+        <div class="card col-offset-1 col-xs-4 col-md-6" style="background-image: url(<%= image_path 'shanghai.jpg'%>)" >
+          <span>SHANGHAI</span>
+          <img src="images/anne.jpg" class="avatar">
+          <h1>Anne's home</h1>
+          <h5>Charming room in Shanghai</h5>
+        </div>
+
+        <div class="card col-offset-1 col-xs-4 col-md-6" style="background-image: url(<%= image_path 'rio.jpg'%>)" >
+          <img src="images/seb.jpeg" class="avatar">
+          <span>RIO</span>
+          <h1>Seb's home</h1>
+          <h5>Charming room in Rio</h5>
+        </div>
+        <div class="card col-offset-1 col-xs-4 col-md-6" style="background-image: url(<%= image_path 'berlin.jpg'%>)" >
+          <img src="images/romain.jpeg" class="avatar">
+          <span>BERLIN</span>
+          <h1>Romain's home</h1>
+          <h5>Charming room in Berlin</h5>
+        </div>
+        </div>
 </div>
